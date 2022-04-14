@@ -1,1 +1,12 @@
+CREATE TABLE Store (id INTEGER PRIMARY KEY, name TEXT, price INTEGER, quantity INTEGER, aisle INTEGER );
+
+INSERT INTO Store VALUES (1, "Shirts", 35, 6, 1);
+INSERT INTO Store VALUES (2, "Pants", 50, 6, 2);
+INSERT INTO Store VALUES (3, "Belts", 20, 3, 3);
+INSERT INTO Store VALUES (4, "Shoes", 40, 5, 4);
+INSERT INTO Store VALUES (5, "Hats", 10, 2, 4);
+
+SELECT * FROM Store WHERE price > 30;
+
+SELECT SUM(price) from Store;
 
